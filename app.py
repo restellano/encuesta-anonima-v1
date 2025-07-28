@@ -3,6 +3,10 @@ import os
 import json
 from datetime import datetime
 
+from uuid import uuid4
+
+os.makedirs("responses", exist_ok=True)
+
 app = Flask(__name__)
 
 UNLOCK_DATE = datetime(2025, 8, 1)
